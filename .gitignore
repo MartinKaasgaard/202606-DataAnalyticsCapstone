@@ -1,0 +1,46 @@
+# ============================================================
+# Data exclusion
+# Keep data directory structure, exclude all data contents
+# ============================================================
+
+data/**
+!data/**/
+!data/**/.gitkeep
+
+# Dataset and generated data files
+*.parquet
+*.csv
+*.json
+*.jsonl
+*.bz2
+*.zip
+*.pkl
+*.joblib
+*.h5
+*.hdf5
+*.sqlite
+*.db
+
+# Python / notebook noise
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+
+# Environments
+.venv/
+venv/
+env/
+.env
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Large generated folders unless intentionally added
+models/
+outputs/
+artifacts/
